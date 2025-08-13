@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="news.css" />
+  </head>
+  <body>
+    <header id="home">
+      <div class="logo-container">
+        <img
+          src="images/Logo Ficksburg Community Hub - Connected Community.png"
+          alt="Ficksburg Community Hub logo"
+          class="left-logo"
+        />
+        <nav class="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <img
+          src="images/Setsoto muni logo.png"
+          alt="Setsoto logo"
+          class="right-logo"
+        />
+      </div>
+    </header>
+    <section id="news">
+      <div class="container">
+        <h2>Community News</h2>
+
+        <div class="news-tabs">
+          <div class="tab active" onclick="showNews('daily')">Daily News</div>
+          <div class="tab" onclick="showNews('weekly')">Weekly News</div>
+          <div class="tab" onclick="showNews('monthly')">Monthly News</div>
+        </div>
+        <div id="daily" class="news-content">
+          This is the daily news content.
+        </div>
+        <div id="weekly" class="news-content" style="display: none">
+          This is the weekly news content.
+        </div>
+        <div id="monthly" class="news-content" style="display: none">
+          This is the monthly news content.
+        </div>
+        <div id="daily-news" class="news-content active">
+          <div class="grid">
+            <div class="card">
+              <h3>Cherry Harvest Season Begins</h3>
+              <p>
+                Local farmers report excellent conditions for this year's cherry
+                harvest.
+              </p>
+              <span>Posted: Today, 09:30 AM</span>
+            </div>
+
+            <div class="card">
+              <h3>New Community Center Approved</h3>
+              <p>
+                Town council votes unanimously on new multi-purpose community
+                facility.
+              </p>
+              <span>Posted: Today, 11:45 AM</span>
+            </div>
+
+            <div class="card">
+              <h3>Playground Renovation Complete</h3>
+              <p>
+                The newly upgraded playground at Caravan Park is now open to the
+                public.
+              </p>
+              <span>Posted: Yesterday, 3:15 PM</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="weekly-news" class="news-content">
+          <div class="grid">
+            <div class="card">
+              <h3>Arts Council Announces Mural Project</h3>
+              <p>
+                Five local artists will create murals to beautify downtown
+                buildings.
+              </p>
+              <span>Posted: 3 days ago</span>
+            </div>
+
+            <div class="card">
+              <h3>Infrastructure Improvements Underway</h3>
+              <p>
+                Three major road projects scheduled for completion by month's
+                end.
+              </p>
+              <span>Posted: 5 days ago</span>
+            </div>
+
+            <div class="card">
+              <h3>Library Expansion Nearly Complete</h3>
+              <p>
+                New children's section and technology center to open next week.
+              </p>
+              <span>Posted: 1 week ago</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="monthly-news" class="news-content">
+          <div class="grid">
+            <div class="card">
+              <h3>Heritage Site Restoration Begins</h3>
+              <p>
+                The 19th century town hall receives much-needed preservation
+                work.
+              </p>
+              <span>Posted: 2 weeks ago</span>
+            </div>
+
+            <div class="card">
+              <h3>Business Development Initiative Launched</h3>
+              <p>
+                New program offers grants and mentorship for local
+                entrepreneurs.
+              </p>
+              <span>Posted: 3 weeks ago</span>
+            </div>
+            <div class="card">
+              <h3>Town Council Adopts Green Energy Plan</h3>
+              <p>
+                Commitment to renewable energy includes solar panel
+                installations.
+              </p>
+              <span>Posted: 4 weeks ago</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="newsFormModal" class="modal">
+      <div class="modal-content">
+        <h2>Add News Article</h2>
+        <button type="button" id="closeModal" style="float:right;">&times;</button>
+        <form id="newsForm">
+          <div>
+            <label for="newsTitle">Title</label>
+            <input type="text" id="newsTitle" required />
+          </div>
+          <div>
+            <label for="newsType">News Type</label>
+            <select id="newsType" required>
+              <option value="">Select type</option>
+              <option value="daily">Daily News</option>
+              <option value="weekly">Weekly News</option>
+              <option value="monthly">Monthly News</option>
+            </select>
+          </div>
+          <div>
+            <label for="newsImage">Image Upload</label>
+            <input type="file" id="newsImage" accept="image/*" />
+            <div id="imagePreview" style="margin-top: 10px;"></div>
+          </div>
+          <div>
+          <div>
+            <label for="newsContent">Content</label>
+            <textarea id="newsContent"maxlength="200000" required></textarea>
+          </div>
+          <button type="submit">Submit News</button>
+        </form>
+      </div>
+    </div>
+    <hr />
+    <script src="news.js"></script>
+    <footer>
+      <p class="copyright">
+        &copy; 2023 Ficksburg Community Hub. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>

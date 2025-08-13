@@ -1,0 +1,97 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Community Hub Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+  </head>
+  <body>
+    <body>
+      <header id="home">
+        <div class="logo-container">
+          <img
+            src="images/Logo Ficksburg Community Hub - Connected Community.png"
+            alt="Ficksburg Community Hub logo"
+            class="left-logo"
+          />
+          <nav class="navbar">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+          <img
+            src="images/Setsoto muni logo.png"
+            alt="Setsoto logo"
+            class="right-logo"
+          />
+        </div>
+      </header>
+    <header>Community Hub <span>Gallery</span></header>
+    <div id="imageModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+        <img id="modalImage" src="" alt="Gallery Image" />
+        <span class="next" onclick="changeImage(1)">&#10095;</span>
+      </div>
+    </div>
+    <div class="gallery-container">
+      <div class="gallery-item" onclick="openModal('images/cherry jazz festival 2.PNG',0)">
+        <img src="images/cherry jazz festival 2.PNG" alt="Event 1" />
+        <div class="gallery-caption">Cherry Jazz Festival</div>
+      </div>
+      <div class="gallery-item" onclick="openModal('images/cherry jazz festival.PNG,0')">
+        <img src="images/cherry jazz festival.PNG" alt="Event 1" />
+        <div class="gallery-caption">Cherry Jazz Festival</div>
+      </div>
+      <div class="gallery-item" onclick="openModal('images/cherry festival logo.PNG,0')">
+        <img src="images/cherry festival logo.PNG" alt="Event 2" />
+        <div class="gallery-caption">Cherry Festival</div>
+      </div>
+      <div class="gallery-item" onclick="openModal('images/cherries  market.PNG,0')">
+        <img src="images/cherries  market.PNG" alt="Event 3" />
+        <div class="gallery-caption">Cherry Market Day</div>
+      </div>
+      <div class="gallery-item" onclick="openModal('images/cherry market 2.PNG,0')">
+        <img src="images/cherry market 2.PNG" alt="Event 3" />
+        <div class="gallery-caption">Cherry Market Day</div>
+      </div>
+      <div class="gallery-item" onclick="openModal('images/fun run.PNG,0')">
+        <img src="images/fun run.PNG" alt="Event 4" />
+        <div class="gallery-caption">Charity Fun Run</div>
+      </div>
+      <div class="gallery-item" onclick="openModal('images/town-hall.PNG,0')">
+        <img src="images/town-hall.PNG" alt="Event 4" />
+        <div class="gallery-caption">Town Hall</div>
+      </div>
+      <div class="gallery-item" onclick="openModal('images/NG-Kerk.PNG,0')">
+        <img src="images/NG-Kerk.PNG" alt="Event 4" />
+        <div class="gallery-caption">NG-Kerk</div>
+      </div>
+      <div class="gallery-item" onclick="openModal('images/view-of-ficksburg.PNG,0')">
+        <img src="images/view-of-ficksburg.PNG" alt="Event 4" />
+        <div class="gallery-caption">Ficksburg View</div>
+      </div>
+      <div class="gallery-item" onclick="openModal('images/view of ficksburg 1.PNG,0')">
+        <img src="images/view of ficksburg 1.PNG" alt="Event 4" />
+        <div class="gallery-caption">Ficksburg Town</div>
+      </div>
+      <div id="imageModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <img id="modalImage" src="" alt="Gallery Image" />
+        </div>
+      </div>
+    </div>
+    <footer>
+      <hr>
+      <p>&copy; 2025 Ficksburg Community Hub. All rights reserved.</p>
+    </footer>
+    <script src="gallery.js"></script>
+  </body>
+</html>

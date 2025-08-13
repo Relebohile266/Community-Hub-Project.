@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #c1e4d3, #a9d6cb);
+  color: #333;
+}
+
+header {
+  background: linear-gradient(90deg, #34495e, #2c3e50);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.left-logo, .right-logo {
+  height: 80px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #f7f2f2;
+  margin: 0 12px;
+  font-weight: 500;
+  padding: 8px 12px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+  background: #1abc9c;
+  color: white;
+  outline: none;
+}
+
+#contact-section {
+  padding: 50px 10%;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.contact-text {
+  flex: 1;
+}
+
+.contact-text h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #0e0a06;
+}
+
+.contact-card {
+  background: rgb(240, 238, 213);
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.contact-card h4 {
+  color: #0a0000;
+  margin-bottom: 5px;
+}
+
+.contact-card i {
+  color: #c19b4a;
+  margin-right: 8px;
+}
+
+.social-media {
+  margin-top: 20px;
+}
+
+.social-media h4 {
+  margin-bottom: 10px;
+}
+
+.social-media a {
+  font-size: 1.2rem;
+  margin-right: 10px;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-media a.facebook { background: #3b5998; }
+.social-media a.tiktok { background: #000; }
+.social-media a.instagram { background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7); }
+.social-media a.youtube { background: #ff0000; }
+
+.social-media a:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+.contact-image img {
+  max-width: 350px;
+  width: 100%;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.15));
+}
+
+footer {
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  color: #777;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+  
+  

@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #f5f5f5;
+  background: linear-gradient(135deg, #152a33, #4a989c, #2a3438);
+  line-height: 1.7;
+}
+
+header {
+  background: linear-gradient(90deg, #34495e, #2c3e50);
+  padding: 15px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.left-logo,
+.right-logo {
+  max-height: 100px;
+  width: auto;
+  filter: drop-shadow(0 0 2px rgba(0,0,0,0.5));
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 12px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+  background: #1abc9c;
+  color: white;
+  outline: none;
+}
+
+#about {
+  padding: 50px 8%;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  margin: 40px auto;
+  max-width: 1200px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+#about h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  background: linear-gradient(45deg, #9cdfd6, #143d3f);
+  text-align: center;
+}
+
+#about p {
+  margin-bottom: 15px;
+  color: #e0e0e0;
+  font-size: 1.1rem;
+}
+.center-image {
+  display: block;
+  margin: 25px auto;
+  max-width: 85%;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  border: 4px solid rgba(255, 255, 255, 0.2);
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 1.3rem;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-left: 6px solid #1abc9c;
+  border-radius: 10px;
+  margin: 30px 0;
+  text-align: center;
+  color: #f5f5f5;
+}
+
+#about ul {
+  list-style: none;
+  margin-top: 20px;
+  padding-left: 0;
+}
+
+#about ul li {
+  background: linear-gradient(45deg, #a0b4b0, #5b7973);
+  padding: 12px 18px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  color: #fff;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.85);
+  font-size: 0.9rem;
+  color: #bbb;
+}

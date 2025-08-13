@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ficksburg Events</title>
+    <link rel="stylesheet" href="events.css">
+  </head>
+  <body>
+    <header>
+      <header id="home">
+        <div class="logo-container">
+          <img
+            src="images/Logo Ficksburg Community Hub - Connected Community.png"
+            alt="Ficksburg Community Hub logo"
+            class="left-logo"
+          />
+          <nav class="navbar">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+          <img
+            src="images/Setsoto muni logo.png"
+            alt="Setsoto logo"
+            class="right-logo"
+          />
+        </div>
+          <h1>Ficksburg Community Hub</h1>
+      </header>
+
+    <main class="events-main">
+      <h2>Ficksburg Events</h2>
+
+      <section class="filter-controls">
+        <div class="search-bar">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search for an event Category..."
+          />
+          <button id="search-btn" title="Search">🔍</button>
+        </div>
+        
+        <div id="filter-modal" class="modal">
+            <div class="modal-content">
+            <span class="close-button">&times;</span>
+                <div class="year-filters">
+                    <h4>Filter by Year</h4>
+                    <select id="year-filter">
+                        <option value="">All Years</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                      </select>
+
+                  <div class="sort-controls">
+                    <label for="sort-by">Sort by:</label>
+                    <select id="sort-by">
+                      <option value="date">Date</option>
+                      <option value="name">Name</option>
+                    </select>
+                  </div>
+                
+                <h3>Select Event Category</h3>
+                <div class="Filter-buttons">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="Fundraising Event">Fundraising Event</button>
+            <button class="filter-btn" data-category="Fun Run Event">Fun Run Event</button>
+            <button class="filter-btn" data-category="Cultural Event Celebration">Cultural Event Celebration</button>
+            <button class="filter-btn" data-category="Sunday Soul Music Festival">Sunday Soul</button>
+            <button class="filter-btn" data-category="FunFair Event">FunFair Event</button>
+            <button class="filter-btn" data-category="Jazz Music Festival">Jazz Music Festival</button>
+            <button class="filter-btn" data-category="Ficksburg Got Talent Show">Ficksburg Got Talent Show</button>
+          </div>
+        </div>
+    </div> 
+    </div>
+    </section>
+    
+    <section id="event-list"></section>
+    <div id="event-content"></div>
+
+    <section class="add-event-section">
+      <h3>Add New Event</h3>
+      <form id="add-event-form">
+        <input type="text" id="event-title" placeholder="Event Title" required />
+    
+        <input type="date" id="event-date" required />
+    
+        <input type="time" id="event-time" required />
+    
+        <input type="text" id="event-location" placeholder="Location" required />
+        
+        <label for="event-category">Select Category:</label>
+        <select id="event-category" required onchange="toggleOtherCategoryInput()">
+          <option value="">Select Category</option>
+          <option value="Fundraising Event">Fundraising Event</option>
+          <option value="Fun Run Event">Fun Run Event</option>
+          <option value="Cultural Event Celebration">Cultural Event Celebration</option>
+          <option value="Sunday Soul Music Festival">Sunday Soul</option>
+          <option value="FunFair Event">FunFair Event</option>
+          <option value="Jazz Music Festival">Jazz Music Festival</option>
+          <option value="Ficksburg Got Talent Show">Ficksburg Got Talent Show</option>
+          <option value="Other">Other</option>
+        </select>
+    <input
+    type="text"
+    id="other-category-input"
+    placeholder="Enter custom category"
+    style="display:none; margin-top:10px;"
+  />
+  <button type="submit">Add Event</button>
+</form>
+</section>
+</main>
+    <footer>
+      <p>&copy; 2025 Ficksburg Community Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="events.js"></script>
+  </body>
+</html>

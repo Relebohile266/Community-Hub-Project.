@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ficksburg Community Hub</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <header id="home">
+      <div class="logo-container">
+        <img
+          src="images/Logo Ficksburg Community Hub - Connected Community.png"
+          alt="Ficksburg Community Hub logo"
+          class="left-logo"
+        />
+        <div class="nav" >
+          <nav class="navbar">
+              <div class="nav-box">
+                  <div class="menu">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+       
+        <div class="auth-buttons">
+          <a href="signin.html" class="auth-button">Sign In</a>
+          <a href="signup.html" class="auth-button">Sign Up</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="Welcome">
+        <h1 class="slide-in"><u>Welcome to Ficksburg Community Hub</u></h1>
+        <p>
+          Your one-stop source for local events, news, and community
+          information.
+        </p>
+      </section>
+
+      <section class="Weather-widget">
+        <h1>Current Weather in Ficksburg</h1>
+        <div id="weather-info">
+          <div class="grid weather-grid">
+            <div class=" weather-card video-card card">
+              <video autoplay muted loop playsinline class="bg-video">
+                <source src="video/sky.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <div class="weather-data">
+              <p>Loading weather data...</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="news">
+        <div class="container">
+          <h2>News Highlights</h2>
+          <div id="daily-news" class="news-content active">
+            <div class="grid news-grid">
+              <div class="news-card card">
+                <h3>Cherry Harvest Season Begins</h3>
+                <p>
+                  Local farmers report excellent conditions for this year's
+                  cherry harvest.
+                </p>
+                <span>Posted: Today, 09:30 AM</span>
+              </div>
+
+              <div class="news-card card">
+                <h3>New Community Center Approved</h3>
+                <p>
+                  Town council votes unanimously on new multi-purpose community
+                  facility.
+                </p>
+                <span>Posted: Today, 11:45 AM</span>
+              </div>
+
+              <div class="news-card card">
+                <h3>Playground Renovation Complete</h3>
+                <p>
+                  The newly upgraded playground at Caravan Park is now open to
+                  the public.
+                </p>
+                <span>Posted: Yesterday, 3:15 PM</span>
+              </div>
+            </div>
+          </div>
+
+      <section class="Events-lists">
+        <div>
+        <h3>Upcoming Events 2025</h3>
+        <ul id="events-container"></ul>
+        <li><strong>Little Angels Pre-School Outreach.</strong></li>
+        <li><strong>Ficksburg Marathon.</strong></li>
+        <li><strong>Heritage Day Celebration.</strong></li>
+        <li><strong>Setsoto Soul Sessions.</strong></li>
+        <li><strong>Cherry Festival.</strong></li>
+        <li><strong>Cherry Jazz Festival.</strong></li>
+        <p>Click here for more details: <a href="events.html">Events</a></p>
+      </div>
+      <div class="image-gallery">
+        <img src="images/Funfair-33293300.jpg" alt="funfair" class="card"/>
+        <img src="images/Heritage-10956272-16175759.jpg" alt="heritage" class="card"/>
+        <img src="images/community outreach-8042458.jpg" alt="outreach" class="card"/>
+        <img src="images/Marathon-421160.jpg" alt="marathon" class="card"/>
+        <img src="images/cherries  market.PNG" alt="market" class="card"/>
+        <img src="images/cherry market 2.PNG" alt="cherry" class="card"/>
+      </div>
+      </section>
+
+      <section id="data-visualization">
+        <h3>Events Categories</h3>
+        <canvas id="events-chart"></canvas>
+      </section>
+    </main>
+    <script src="index.js"></script>
+    <footer>
+      <div class="footer-container">
+        <div class="branding">
+          <img src="images/Logo Ficksburg Community Hub - Connected Community.png" alt="logo">
+          <div>
+          <span class="site-name">Ficksburg Community Hub</span>
+      <p> Connecting our community since 2023</p>
+      </div>
+      </div>
+      <div class="footer-content">
+        <div class="quick-links">
+
+          <h4>Quick Links</h4>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="news.html">News</a></li>
+          </ul>
+      </div>
+      <div class="subscribe">
+        <h4>Subscribe</h4>
+        <p>Get the latest news and updates</p>
+        <br>
+            <input type="email" placeholder="Your email">
+            <button>Subscribe</button>
+        </div>
+    </div>
+<hr>
+<p class="copyright">&copy; 2023 Ficksburg Community Hub. All rights reserved.</p>
+</div>
+</footer>
+  </body>
+</html>
